@@ -64,6 +64,7 @@
             border-bottom: 3px solid transparent;
         }
 
+        .nav-tabs a.active,
         .nav-tabs a:active, .nav-tabs a:hover {
             color: var(--accent-color);
             border-bottom: 3px solid var(--accent-color);
@@ -186,7 +187,7 @@
 
     <!-- 頂部快速點擊導航 -->
     <div class="nav-tabs">
-        <a href="#day1">D1 抵達</a>
+        <a href="#day1" class="active">D1 抵達</a>
         <a href="#day2">D2 迪士尼</a>
         <a href="#day3">D3 經典散策</a>
         <a href="#day4">D4 古今交融</a>
@@ -408,6 +409,49 @@
         </div>
 
     </div>
+
+    <script>
+        const navLinks = Array.from(document.querySelectorAll(".nav-tabs a"));
+        const sections = Array.from(document.querySelectorAll(".day-section, #tips"));
+        const defaultSectionId = "day1";
+
+        function setActiveTab(sectionId) {
+            navLinks.forEach((link) => {
+                const isActive = link.getAttribute("href") === "#" + sectionId;
+                link.classList.toggle("active", isActive);
+            });
+        }
+
+        function updateActiveTabFromScroll() {
+            const activationOffset = 90;
+            let currentSectionId = defaultSectionId;
+
+            sections.forEach((section) => {
+                if (section.getBoundingClientRect().top <= activationOffset) {
+                    currentSectionId = section.id;
+                }
+            });
+
+            setActiveTab(currentSectionId);
+        }
+
+        navLinks.forEach((link) => {
+            link.addEventListener("click", () => {
+                const targetId = link.getAttribute("href").slice(1);
+                setActiveTab(targetId);
+            });
+        });
+
+        window.addEventListener("hashchange", () => {
+            const targetId = window.location.hash.slice(1) || defaultSectionId;
+            setActiveTab(targetId);
+        });
+
+        window.addEventListener("scroll", updateActiveTabFromScroll, { passive: true });
+
+        const initialSectionId = window.location.hash.slice(1) || defaultSectionId;
+        setActiveTab(initialSectionId);
+    </script>
 
 </body>
 </html>

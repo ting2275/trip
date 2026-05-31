@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🗺️ 上海五日自由行・完整行程規劃</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #e74c3c;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding-bottom: 60px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        /* 快速導航切換鈕 */
+        .nav-tabs {
+            display: flex;
+            justify-content: center;
+            background: #fff;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            overflow-x: auto;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .nav-tabs a {
+            display: inline-block;
+            padding: 15px 20px;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.95rem;
+            border-bottom: 3px solid transparent;
+        }
+
+        .nav-tabs a:active, .nav-tabs a:hover {
+            color: var(--accent-color);
+            border-bottom: 3px solid var(--accent-color);
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+
+        /* 天數區塊 */
+        .day-section {
+            scroll-margin-top: 60px;
+            margin-bottom: 30px;
+        }
+
+        .day-title {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px 15px;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        /* 時間軸樣式 */
+        .timeline-item {
+            background: var(--card-bg);
+            border-left: 4px solid var(--accent-color);
+            padding: 15px;
+            margin-bottom: 12px;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .time-badge {
+            display: inline-block;
+            background-color: #edf2f7;
+            color: var(--primary-color);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 0.85rem;
+            margin-bottom: 8px;
+        }
+
+        .event-title {
+            font-weight: bold;
+            font-size: 1.05rem;
+            color: #1a202c;
+            margin-bottom: 5px;
+        }
+
+        .event-detail {
+            font-size: 0.95rem;
+            color: #4a5568;
+        }
+
+        .event-detail ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin-top: 5px;
+        }
+
+        .event-detail li {
+            position: relative;
+            padding-left: 15px;
+            margin-bottom: 3px;
+        }
+
+        .event-detail li::before {
+            content: "•";
+            color: var(--accent-color);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        /* 特別亮點樣式 */
+        .highlight-box {
+            background: #fffaf0;
+            border-left-color: #dd6b20 !important;
+        }
+
+        /* 小撇步卡片 */
+        .tips-box {
+            background: #ebf8ff;
+            border: 1px solid #bee3f8;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        .tips-box h3 {
+            color: #2b6cb0;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            font-size: 1.1rem;
+        }
+
+        .tips-ol {
+            padding-left: 20px;
+            font-size: 0.95rem;
+        }
+
+        .tips-ol li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🗺️ 上海五日自由行</h1>
+        <p>玩轉魔都・潮流與古韻完整指南</p>
+    </header>
+
+    <!-- 頂部快速點擊導航 -->
+    <div class="nav-tabs">
+        <a href="#day1">D1 抵達</a>
+        <a href="#day2">D2 迪士尼</a>
+        <a href="#day3">D3 經典散策</a>
+        <a href="#day4">D4 古今交融</a>
+        <a href="#day5">D5 優雅收尾</a>
+        <a href="#tips">💡 行前撇步</a>
+    </div>
+
+    <div class="container">
+
+        <!-- DAY 1 -->
+        <div id="day1" class="day-section">
+            <div class="day-title">🗓️ 6/16（二）第一天：抵達魔都 ｜ 潮流旗艦與世界最大星巴克</div>
+
+            <div class="timeline-item">
+                <span class="time-badge">14:15</span>
+                <div class="event-title">🛬 降落上海虹橋機場</div>
+                <div class="event-detail">打車或搭地鐵 2 號線約 30 分鐘可直達市區。</div>
+            </div>
+
+            <div class="timeline-item">
+                <span class="time-badge">15:30</span>
+                <div class="event-title">🏨 酒店入住：建國鉑萃飯店</div>
+                <div class="event-detail">辦理 Check-in，放行李稍作休息。</div>
+            </div>
+
+            <div class="timeline-item">
+                <span class="time-badge">16:30 - 18:30</span>
+                <div class="event-title">🛍️ 興業太古匯商圈</div>
+                <div class="event-detail">
+                    從飯店搭地鐵 2 號線僅 2 站至南京西路站。
+                    <ul>
+                        <li><strong>路易威登（LV）旗艦店「路易號」：</strong>欣賞極具視覺衝擊力的外觀與建築陳設。</li>
+                        <li><strong>星巴克臻選上海烘焙工坊：</strong>全球最大星巴克，點杯限定咖啡與輕食，觀賞巨型烘豆銅罐。</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <span class="time-badge">19:00</span>
+                <div class="event-title">🍽️ 晚餐與夜景</div>
+                <div class="event-detail">於南京西路商圈享用精緻海派菜，隨後漫步返回飯店，欣賞南京西路迷人夜景。</div>
+            </div>
+        </div>
+
+        <!-- DAY 2 -->
+        <div id="day2" class="day-section">
+            <div class="day-title">🏰 6/17（三）第二天：童話圓夢 ｜ 上海迪士尼樂園一日遊</div>
+
+            <div class="timeline-item">
+                <span class="time-badge">07:30</span>
+                <div class="event-title">🚗 出發</div>
+                <div class="event-detail">建議直接打車（約 45 分鐘）或搭乘地鐵 11 號線直達迪士尼樂園。</div>
+            </div>
+
+            <div class="timeline-item">
+                <span class="time-badge">09:00 - 20:30</span>
+                <div class="event-title">🎡 上海迪士尼樂園</div>
+                <div class="event-detail">
+                    <ul>
+                        <li><strong>推薦玩樂順序：</strong>進園先衝「創極速光輪」與「加勒比海盜」。</li>
+                        <li><strong>午後充能：</strong>下午累了可以進劇場看《風暴來臨》特技表演，坐在冷氣房裡歇腳。</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item highlight-box">
+                <span class="time-badge" style="background-color: #feebc8;">20:00</span>
+                <div class="event-title">✨ 夜光幻影秀</div>
+                <div class="event-detail">觀賞城堡震撼的煙火燈光秀，享受最夢幻的夜晚。</div>
+            </div>
+
+            <div class="timeline-item">
+                <span class="time-badge">21:30</span>
+                <div class="event-title">💤 返回飯店</div>
+                <div class="event-detail">返回飯店休息，恢復體力。</div>
+            </div>
+        </div>
+
+        <!-- DAY 3 -->
+        <div id="day3" class="day-section">
+            <div class="day-title">🌆 6/18（四）第三天：經典散策 ｜ 網紅美妝、道地雙澆麵與外灘夜景</div>
+
+            <div class="timeline-item">
+                <span class="time-badge">11:30 - 13:00</span>
+                <div class="event-title">🍜 午餐：味香齋（雁盪路店）</div>
+                <div class="event-detail">
+                    從飯店搭地鐵 10 號線轉 13 號線至淮海中路站。
+                    <ul>
+                        <li><strong>道地必點：</strong>麻醬麵 + 辣肉（或辣醬）雙澆頭，再配一碗精華的咖哩牛肉湯（小牛湯）。</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <span class="time-badge">13:00 - 15:30</span>
+                <div class="event-title">🧱 新天地南北里 & HARMAY 話梅</div>
+                <div class="event-detail">
+                    飽餐後散步至新天地，逛逛石庫門建築與露天街區。
+                    <ul>
+                        <li><strong>打卡熱點：</strong>網紅美妝店 HARMAY 話梅（新天地店），工業風倉儲設計非常適合拍照。</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <span class="time-badge">16:00 - 18:00</span>
+                <div class="event-title">🚶‍♂️ 南京路步行街</div>
+                <div class="event-detail">搭車回到飯店旁的南京路步行街，一路向東漫步，逛逛第一食品商店與各式品牌旗艦店。</div>
+            </div>
+
+            <div class="timeline-item highlight-box">
+                <span class="time-badge" style="background-color: #feebc8;">18:30 - 20:30</span>
+                <div class="event-title">🌃 上海外灘夜景</div>
+                <div class="event-detail">
+                    散步至步行街盡頭的外灘。<strong>大約 19:00 萬國建築群集體亮燈</strong>，隔江對望陸家嘴摩天大樓，享受最經典的魔都夜色。
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <span class="time-badge">20:30</span>
+                <div class="event-title">🏨 返回飯店</div>
+                <div class="event-detail">步行返回飯店休息。</div>
+            </div>
+        </div>
+
+        <!-- DAY 4 -->
+        <div id="day4" class="day-section">
+            <div class="day-title">🏮 6/19（五）第四天：古今交融 ｜ 古韻豫園、明珠塔與宮宴漢服沉浸式晚宴</div>
+
+            <div class="timeline-item">
+                <span class="time-badge">10:30 - 13:00</span>
+                <div class="event-title">📸 豫園與老街散策</div>
+                <div class="event-detail">
+                    搭地鐵 10 號線至豫園站。早點入園避開人潮，漫步精緻的江南古典園林、走九曲橋。
+                    <ul>
+                        <li><strong>午餐輕食：</strong>在豫園商城品嚐老字號點心（如南翔小籠），中午不過飽，留肚子給晚餐。</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <span class="time-badge">13:30 - 15:30</span>
+                <div class="event-title">🗼 陸家嘴與東方明珠塔</div>
+                <div class="event-detail">搭地鐵 14 號線過江直達陸家嘴站。近距離打卡東方明珠、上海中心等摩天大樓，可登塔俯瞰黃浦江兩岸繁華。</div>
+            </div>
+
+            <div class="timeline-item">
+                <span class="time-badge">15:30 - 16:30</span>
+                <div class="event-title">🚕 回飯店休息 / 前往餐廳</div>
+                <div class="event-detail">先回飯店放東西、稍作休息，隨後打車前往宮宴餐廳。</div>
+            </div>
+
+            <div class="timeline-item highlight-box">
+                <span class="time-badge" style="background-color: #feebc8;">16:45 🚨重要時間點</span>
+                <span class="time-badge" style="background-color: #feebc8;"><a style="color: #dd6c21; font-style: normal; text-decoration: none;" href="https://tw.trip.com/things-to-do/detail/95664673?locale=zh_tw&curr=twd&allianceid=742329&sid=4143208&ppcid=ckid-99607823147_adid-780409339579_akid-kwd-2459492852111_adgid-186098665334&utm_source=google&utm_medium=cpc&utm_campaign=23058148773&gad_source=1&gad_campaignid=23058148773&gbraid=0AAAAABn2eFK39dKs-EPLCDu_nkVMrbqWI&gclid=Cj0KCQjwlerQBhDMARIsAB16H-WIWxeG6_Y48IIBTfDnVa__Bf_Qsw5X360beCuHrLZ_BavfHQMN8y8aAjSyEALw_wcB" target="_blank">點我看宮宴介紹</a></span>
+                <div class="event-title">💄 抵達「宮宴」餐廳、換裝</div>
+                <div class="event-detail">
+                    <strong>16:45 - 18:30 辦理漢服妝造：</strong>現場取號排隊，建議準時到。由專業化妝師進行古風編髮與精緻妝容繪製。換上華麗漢服後，在店內紅牆、宮燈等實景拍攝古風大片。
+                </div>
+            </div>
+
+            <div class="timeline-item highlight-box">
+                <span class="time-badge" style="background-color: #feebc8;">18:50 - 20:50</span>
+                <div class="event-title">🎭 ✦ 盛宴啟幕：沉浸式宮廷餐秀 ✦</div>
+                <div class="event-detail">
+                    <strong>18:50 準時開宴。</strong>全息光影在餐桌上流動，演員在桌椅間穿梭互動，近距離表演水袖崑曲與宮廷舞蹈。一邊品嚐精緻的國風御膳，一邊體驗穿越千年的宮廷盛宴。
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <span class="time-badge">21:00</span>
+                <div class="event-title">🏨 返回飯店</div>
+                <div class="event-detail">打車返回飯店休息。</div>
+            </div>
+        </div>
+
+        <!-- DAY 5 -->
+        <div id="day5" class="day-section">
+            <div class="day-title">🛫 6/20（六）第五天：優雅收尾 ｜ 老字號生煎與返程</div>
+
+            <div class="timeline-item">
+                <span class="time-badge">09:30 - 11:30</span>
+                <div class="event-title">☕ 飯店周邊慢活</div>
+                <div class="event-detail">在步行街附近悠閒吃個早餐，享受最後的城市漫步。</div>
+            </div>
+
+            <div class="timeline-item">
+                <span class="time-badge">12:00</span>
+                <div class="event-title">🛎️ 飯店退房</div>
+                <div class="event-detail">辦理退房，行李先寄放櫃檯。</div>
+            </div>
+
+            <div class="timeline-item">
+                <span class="time-badge">12:30 - 13:30</span>
+                <div class="event-title">🥟 午餐推薦</div>
+                <div class="event-detail">在飯店附近品嚐「大壺春」的道地生煎包，或「德興館」的本幫菜。</div>
+            </div>
+
+            <div class="timeline-item">
+                <span class="time-badge">14:00</span>
+                <div class="event-title">🧳 取行李與前往機場</div>
+                <div class="event-detail">回飯店取行李，打車前往虹橋機場（建議提早 2 小時抵達辦理登機）。</div>
+            </div>
+
+            <div class="timeline-item highlight-box">
+                <span class="time-badge" style="background-color: #feebc8;">16:15</span>
+                <div class="event-title">✈️ 飛機起飛</div>
+                <div class="event-detail">搭乘中華航空 CI202，於 18:15 抵達台北松山機場，結束圓滿行程。</div>
+            </div>
+        </div>
+
+        <!-- 行前小撇步 -->
+        <div id="tips" class="tips-box">
+            <h3>💡 行前小撇步</h3>
+            <ol class="tips-ol">
+                <li><strong>宮宴預訂：</strong>請務必提前在「大眾點評」App 或 Trip.com 上預約 6/19 的晚宴，並選擇「含服裝+妝造」的套餐，建議選 VIP 以上席位，觀賞與互動位置最佳。</li>
+                <li><strong>電子支付與導航：</strong>出發前在台灣先將 <strong>Alipay（支付寶）</strong> 綁定好信用卡，在上海搭地鐵、打車、吃飯一碼搞定；當地導航與叫車建議下載 <strong>高德地圖</strong>，最為精準舒適。</li>
+            </ol>
+        </div>
+
+    </div>
+
+</body>
+</html>

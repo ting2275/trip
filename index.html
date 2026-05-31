@@ -157,6 +157,42 @@
             border-left-color: #dd6b20 !important;
         }
 
+        .map-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .map-link {
+            display: inline-flex;
+            align-items: center;
+            padding: 5px 10px;
+            border: 1px solid #d8e1ea;
+            border-radius: 999px;
+            background: #ffffff;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 0.82rem;
+            line-height: 1.2;
+        }
+
+        .map-link:hover,
+        .map-link:active {
+            color: var(--accent-color);
+            border-color: #f0b3aa;
+        }
+
+        .map-link.amap {
+            background: #eefaf4;
+            border-color: #bfe3cf;
+        }
+
+        .map-link.google {
+            background: #f3f7ff;
+            border-color: #c8d7f2;
+        }
+
         /* 小撇步卡片 */
         .tips-box {
             background: #ebf8ff;
@@ -210,13 +246,25 @@
             <div class="timeline-item">
                 <span class="time-badge">14:15</span>
                 <div class="event-title">🛬 降落上海虹橋機場</div>
-                <div class="event-detail">打車或搭地鐵 2 號線約 30 分鐘可直達市區。</div>
+                <div class="event-detail">
+                    打車或搭地鐵 2 號線約 30 分鐘可直達市區。
+                    <div class="map-links">
+                        <a class="map-link amap" href="https://uri.amap.com/search?keyword=上海虹桥国际机场&amp;city=上海" target="_blank" rel="noopener noreferrer">高德｜虹橋機場</a>
+                        <a class="map-link google" href="https://www.google.com/maps/search/?api=1&amp;query=上海虹橋國際機場" target="_blank" rel="noopener noreferrer">Google｜虹橋機場</a>
+                    </div>
+                </div>
             </div>
 
             <div class="timeline-item">
                 <span class="time-badge">15:30</span>
                 <div class="event-title">🏨 酒店入住：建國鉑萃飯店</div>
-                <div class="event-detail">辦理 Check-in，放行李稍作休息。</div>
+                <div class="event-detail">
+                    辦理 Check-in，放行李稍作休息。
+                    <div class="map-links">
+                        <a class="map-link amap" href="https://uri.amap.com/search?keyword=建國鉑萃飯店%20上海&amp;city=上海" target="_blank" rel="noopener noreferrer">高德｜建國鉑萃飯店</a>
+                        <a class="map-link google" href="https://www.google.com/maps/search/?api=1&amp;query=建國鉑萃飯店%20上海" target="_blank" rel="noopener noreferrer">Google｜建國鉑萃飯店</a>
+                    </div>
+                </div>
             </div>
 
             <div class="timeline-item">
@@ -228,13 +276,29 @@
                         <li><strong>路易威登（LV）旗艦店「路易號」：</strong>欣賞極具視覺衝擊力的外觀與建築陳設。</li>
                         <li><strong>星巴克臻選上海烘焙工坊：</strong>全球最大星巴克，點杯限定咖啡與輕食，觀賞巨型烘豆銅罐。</li>
                     </ul>
+                    <div class="map-links">
+                        <a class="map-link amap" href="https://uri.amap.com/search?keyword=興業太古匯&amp;city=上海" target="_blank" rel="noopener noreferrer">高德｜興業太古匯</a>
+                        <a class="map-link google" href="https://www.google.com/maps/search/?api=1&amp;query=興業太古匯%20上海" target="_blank" rel="noopener noreferrer">Google｜興業太古匯</a>
+                        <a class="map-link amap" href="https://uri.amap.com/search?keyword=南京西路站&amp;city=上海" target="_blank" rel="noopener noreferrer">高德｜南京西路站</a>
+                        <a class="map-link google" href="https://www.google.com/maps/search/?api=1&amp;query=南京西路站%20上海" target="_blank" rel="noopener noreferrer">Google｜南京西路站</a>
+                        <a class="map-link amap" href="https://uri.amap.com/search?keyword=路易号%20上海&amp;city=上海" target="_blank" rel="noopener noreferrer">高德｜LV 路易號</a>
+                        <a class="map-link google" href="https://www.google.com/maps/search/?api=1&amp;query=路易號%20上海%20LV" target="_blank" rel="noopener noreferrer">Google｜LV 路易號</a>
+                        <a class="map-link amap" href="https://uri.amap.com/search?keyword=星巴克臻選上海烘焙工坊&amp;city=上海" target="_blank" rel="noopener noreferrer">高德｜星巴克工坊</a>
+                        <a class="map-link google" href="https://www.google.com/maps/search/?api=1&amp;query=星巴克臻選上海烘焙工坊" target="_blank" rel="noopener noreferrer">Google｜星巴克工坊</a>
+                    </div>
                 </div>
             </div>
 
             <div class="timeline-item">
                 <span class="time-badge">19:00</span>
                 <div class="event-title">🍽️ 晚餐與夜景</div>
-                <div class="event-detail">於南京西路商圈享用精緻海派菜，隨後漫步返回飯店，欣賞南京西路迷人夜景。</div>
+                <div class="event-detail">
+                    於南京西路商圈享用精緻海派菜，隨後漫步返回飯店，欣賞南京西路迷人夜景。
+                    <div class="map-links">
+                        <a class="map-link amap" href="https://uri.amap.com/search?keyword=南京西路&amp;city=上海" target="_blank" rel="noopener noreferrer">高德｜南京西路</a>
+                        <a class="map-link google" href="https://www.google.com/maps/search/?api=1&amp;query=南京西路%20上海" target="_blank" rel="noopener noreferrer">Google｜南京西路</a>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -256,6 +320,10 @@
                         <li><strong>推薦玩樂順序：</strong>進園先衝「創極速光輪」與「加勒比海盜」。</li>
                         <li><strong>午後充能：</strong>下午累了可以進劇場看《風暴來臨》特技表演，坐在冷氣房裡歇腳。</li>
                     </ul>
+                    <div class="map-links">
+                        <a class="map-link amap" href="https://uri.amap.com/search?keyword=上海迪士尼乐园&amp;city=上海" target="_blank" rel="noopener noreferrer">高德｜上海迪士尼</a>
+                        <a class="map-link google" href="https://www.google.com/maps/search/?api=1&amp;query=上海迪士尼樂園" target="_blank" rel="noopener noreferrer">Google｜上海迪士尼</a>
+                    </div>
                 </div>
             </div>
 
@@ -284,6 +352,12 @@
                     <ul>
                         <li><strong>道地必點：</strong>麻醬麵 + 辣肉（或辣醬）雙澆頭，再配一碗精華的咖哩牛肉湯（小牛湯）。</li>
                     </ul>
+                    <div class="map-links">
+                        <a class="map-link amap" href="https://uri.amap.com/search?keyword=味香斋雁荡路店&amp;city=上海" target="_blank" rel="noopener noreferrer">高德｜味香齋</a>
+                        <a class="map-link google" href="https://www.google.com/maps/search/?api=1&amp;query=味香齋%20雁盪路店%20上海" target="_blank" rel="noopener noreferrer">Google｜味香齋</a>
+                        <a class="map-link amap" href="https://uri.amap.com/search?keyword=淮海中路站&amp;city=上海" target="_blank" rel="noopener noreferrer">高德｜淮海中路站</a>
+                        <a class="map-link google" href="https://www.google.com/maps/search/?api=1&amp;query=淮海中路站%20上海" target="_blank" rel="noopener noreferrer">Google｜淮海中路站</a>
+                    </div>
                 </div>
             </div>
 
@@ -295,13 +369,25 @@
                     <ul>
                         <li><strong>打卡熱點：</strong>網紅美妝店 HARMAY 話梅（新天地店），工業風倉儲設計非常適合拍照。</li>
                     </ul>
+                    <div class="map-links">
+                        <a class="map-link amap" href="https://uri.amap.com/search?keyword=新天地南北里&amp;city=上海" target="_blank" rel="noopener noreferrer">高德｜新天地南北里</a>
+                        <a class="map-link google" href="https://www.google.com/maps/search/?api=1&amp;query=新天地南北里%20上海" target="_blank" rel="noopener noreferrer">Google｜新天地南北里</a>
+                        <a class="map-link amap" href="https://uri.amap.com/search?keyword=HARMAY话梅新天地店&amp;city=上海" target="_blank" rel="noopener noreferrer">高德｜HARMAY 話梅</a>
+                        <a class="map-link google" href="https://www.google.com/maps/search/?api=1&amp;query=HARMAY%20話梅%20新天地店%20上海" target="_blank" rel="noopener noreferrer">Google｜HARMAY 話梅</a>
+                    </div>
                 </div>
             </div>
 
             <div class="timeline-item">
                 <span class="time-badge">16:00 - 18:00</span>
                 <div class="event-title">🚶‍♂️ 南京路步行街</div>
-                <div class="event-detail">搭車回到飯店旁的南京路步行街，一路向東漫步，逛逛第一食品商店與各式品牌旗艦店。</div>
+                <div class="event-detail">
+                    搭車回到飯店旁的南京路步行街，一路向東漫步，逛逛第一食品商店與各式品牌旗艦店。
+                    <div class="map-links">
+                        <a class="map-link amap" href="https://uri.amap.com/search?keyword=南京路步行街&amp;city=上海" target="_blank" rel="noopener noreferrer">高德｜南京路步行街</a>
+                        <a class="map-link google" href="https://www.google.com/maps/search/?api=1&amp;query=南京路步行街%20上海" target="_blank" rel="noopener noreferrer">Google｜南京路步行街</a>
+                    </div>
+                </div>
             </div>
 
             <div class="timeline-item highlight-box">
@@ -309,6 +395,10 @@
                 <div class="event-title">🌃 上海外灘夜景</div>
                 <div class="event-detail">
                     散步至步行街盡頭的外灘。<strong>大約 19:00 萬國建築群集體亮燈</strong>，隔江對望陸家嘴摩天大樓，享受最經典的魔都夜色。
+                    <div class="map-links">
+                        <a class="map-link amap" href="https://uri.amap.com/search?keyword=上海外滩&amp;city=上海" target="_blank" rel="noopener noreferrer">高德｜上海外灘</a>
+                        <a class="map-link google" href="https://www.google.com/maps/search/?api=1&amp;query=上海外灘" target="_blank" rel="noopener noreferrer">Google｜上海外灘</a>
+                    </div>
                 </div>
             </div>
 
@@ -331,13 +421,27 @@
                     <ul>
                         <li><strong>午餐輕食：</strong>在豫園商城品嚐老字號點心（如南翔小籠），中午不過飽，留肚子給晚餐。</li>
                     </ul>
+                    <div class="map-links">
+                        <a class="map-link amap" href="https://uri.amap.com/search?keyword=豫园&amp;city=上海" target="_blank" rel="noopener noreferrer">高德｜豫園</a>
+                        <a class="map-link google" href="https://www.google.com/maps/search/?api=1&amp;query=豫園%20上海" target="_blank" rel="noopener noreferrer">Google｜豫園</a>
+                        <a class="map-link amap" href="https://uri.amap.com/search?keyword=豫园商城&amp;city=上海" target="_blank" rel="noopener noreferrer">高德｜豫園商城</a>
+                        <a class="map-link google" href="https://www.google.com/maps/search/?api=1&amp;query=豫園商城%20上海" target="_blank" rel="noopener noreferrer">Google｜豫園商城</a>
+                    </div>
                 </div>
             </div>
 
             <div class="timeline-item">
                 <span class="time-badge">13:30 - 15:30</span>
                 <div class="event-title">🗼 陸家嘴與東方明珠塔</div>
-                <div class="event-detail">搭地鐵 14 號線過江直達陸家嘴站。近距離打卡東方明珠、上海中心等摩天大樓，可登塔俯瞰黃浦江兩岸繁華。</div>
+                <div class="event-detail">
+                    搭地鐵 14 號線過江直達陸家嘴站。近距離打卡東方明珠、上海中心等摩天大樓，可登塔俯瞰黃浦江兩岸繁華。
+                    <div class="map-links">
+                        <a class="map-link amap" href="https://uri.amap.com/search?keyword=东方明珠广播电视塔&amp;city=上海" target="_blank" rel="noopener noreferrer">高德｜東方明珠塔</a>
+                        <a class="map-link google" href="https://www.google.com/maps/search/?api=1&amp;query=東方明珠塔%20上海" target="_blank" rel="noopener noreferrer">Google｜東方明珠塔</a>
+                        <a class="map-link amap" href="https://uri.amap.com/search?keyword=陆家嘴站&amp;city=上海" target="_blank" rel="noopener noreferrer">高德｜陸家嘴站</a>
+                        <a class="map-link google" href="https://www.google.com/maps/search/?api=1&amp;query=陸家嘴站%20上海" target="_blank" rel="noopener noreferrer">Google｜陸家嘴站</a>
+                    </div>
+                </div>
             </div>
 
             <div class="timeline-item">
@@ -352,6 +456,10 @@
                 <div class="event-title">💄 抵達「宮宴」餐廳、換裝</div>
                 <div class="event-detail">
                     <strong>16:45 - 18:30 辦理漢服妝造：</strong>現場取號排隊，建議準時到。由專業化妝師進行古風編髮與精緻妝容繪製。換上華麗漢服後，在店內紅牆、宮燈等實景拍攝古風大片。
+                    <div class="map-links">
+                        <a class="map-link amap" href="https://uri.amap.com/search?keyword=宫宴%20上海&amp;city=上海" target="_blank" rel="noopener noreferrer">高德｜宮宴餐廳</a>
+                        <a class="map-link google" href="https://www.google.com/maps/search/?api=1&amp;query=宮宴%20上海" target="_blank" rel="noopener noreferrer">Google｜宮宴餐廳</a>
+                    </div>
                 </div>
             </div>
 
@@ -389,13 +497,27 @@
             <div class="timeline-item">
                 <span class="time-badge">12:30 - 13:30</span>
                 <div class="event-title">🥟 午餐推薦</div>
-                <div class="event-detail">在飯店附近品嚐「大壺春」的道地生煎包，或「德興館」的本幫菜。</div>
+                <div class="event-detail">
+                    在飯店附近品嚐「大壺春」的道地生煎包，或「德興館」的本幫菜。
+                    <div class="map-links">
+                        <a class="map-link amap" href="https://uri.amap.com/search?keyword=大壶春%20上海&amp;city=上海" target="_blank" rel="noopener noreferrer">高德｜大壺春</a>
+                        <a class="map-link google" href="https://www.google.com/maps/search/?api=1&amp;query=大壺春%20上海" target="_blank" rel="noopener noreferrer">Google｜大壺春</a>
+                        <a class="map-link amap" href="https://uri.amap.com/search?keyword=德兴馆%20上海&amp;city=上海" target="_blank" rel="noopener noreferrer">高德｜德興館</a>
+                        <a class="map-link google" href="https://www.google.com/maps/search/?api=1&amp;query=德興館%20上海" target="_blank" rel="noopener noreferrer">Google｜德興館</a>
+                    </div>
+                </div>
             </div>
 
             <div class="timeline-item">
                 <span class="time-badge">14:00</span>
                 <div class="event-title">🧳 取行李與前往機場</div>
-                <div class="event-detail">回飯店取行李，打車前往虹橋機場（建議提早 2 小時抵達辦理登機）。</div>
+                <div class="event-detail">
+                    回飯店取行李，打車前往虹橋機場（建議提早 2 小時抵達辦理登機）。
+                    <div class="map-links">
+                        <a class="map-link amap" href="https://uri.amap.com/search?keyword=上海虹桥国际机场&amp;city=上海" target="_blank" rel="noopener noreferrer">高德｜虹橋機場</a>
+                        <a class="map-link google" href="https://www.google.com/maps/search/?api=1&amp;query=上海虹橋國際機場" target="_blank" rel="noopener noreferrer">Google｜虹橋機場</a>
+                    </div>
+                </div>
             </div>
 
             <div class="timeline-item highlight-box">
